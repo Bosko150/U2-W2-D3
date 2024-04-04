@@ -1,0 +1,19 @@
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); // Sposta l'elemento verso l'alto di 20px
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); // Ripristina la posizione originale
+  }
+}
+
+// Apply animation to the header elements
+#hero nav img,
+#hero nav ul,
+#hero #herocontent img,
+#hero #herocontent div {
+  opacity: 0;
+  animation: fadeInDown 1s ease-in-out forwards; // Applica l'animazione di fadeInDown
+}

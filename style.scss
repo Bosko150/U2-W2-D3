@@ -1,0 +1,44 @@
+@import "reset";
+@import "buttons";
+@import "colors";
+@import "animations";
+@import "font";
+@import "spacing";
+header {
+  background-color: $bg-hero;
+
+  nav {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+
+    ul {
+      padding-right: 50px;
+      li {
+        display: inline-flex;
+        padding-left: 20px;
+        a {
+          text-decoration: none;
+          color: $text-color;
+        }
+      }
+    }
+  }
+  #herocontent {
+    display: flex;
+  }
+}
+main {
+  #grid {
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    background-color: white;
+    img {
+      width: calc(25% - 40px);
+      max-width: 300px;
+      padding: 20px;
+    }
+  }
+}

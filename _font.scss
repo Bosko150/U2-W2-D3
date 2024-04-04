@@ -1,0 +1,10 @@
+@import "colors";
+
+@mixin title-big {
+  color: $text-color;
+  font-size: 3rem;
+  font-weight: 500;
+}
+h1 {
+  @include title-big;
+}

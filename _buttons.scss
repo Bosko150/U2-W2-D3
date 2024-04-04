@@ -1,0 +1,18 @@
+@import "colors";
+
+@each $name, $value in $button-colors {
+    .#{$name}-button {
+        background-color: $value;
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    
+        &:hover {
+          opacity: 0.8;
+          scale: 1.1;
+        }
+      }
+    }

@@ -1,0 +1,29 @@
+$spacing-size: (
+  "sm": 5px,
+  "normal": 10px,
+  "md": 15px,
+  "lg": 20px,
+  "xl": 25px,
+  "xxl": 30px,
+);
+
+@each $name, $value in $spacing-size {
+  .padding-block-#{$name}-button {
+    padding-block: $value;
+  }
+}
+@each $name, $value in $spacing-size {
+  .padding-inline-#{$name}-button {
+    padding-inline: $value;
+  }
+}
+@each $name, $value in $spacing-size {
+  .margin-inline-#{$name}-button {
+    margin-inline: $value;
+  }
+}
+@each $name, $value in $spacing-size {
+  .margin-block-#{$name}-button {
+    margin-block: $value;
+  }
+}
