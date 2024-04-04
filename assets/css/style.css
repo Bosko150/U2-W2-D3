@@ -199,14 +199,11 @@ header #herocontent {
 }
 
 main #grid {
-  margin-inline: auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 700px;
   background-color: white;
 }
 main #grid img {
   width: calc(25% - 40px);
-  max-width: 300px;
   padding: 20px;
 }/*# sourceMappingURL=style.css.map */
